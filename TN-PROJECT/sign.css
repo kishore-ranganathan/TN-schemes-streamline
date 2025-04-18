@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling with background gradient */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #4e73df, #1e3d58); /* Subtle gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+  }
+  
+  /* Main container for the form */
+  .signup-container {
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading styles */
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Input fields styling */
+  input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Focus effect on inputs */
+  input:focus {
+    outline: none;
+    border-color: #0077cc;
+    background-color: #e8f4fd;
+  }
+  
+  /* Submit button styling */
+  button {
+    padding: 15px 30px;
+    background-color: #0077cc;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  /* Button hover and active effects */
+  button:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Link styling for "Already have an account?" */
+  a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Error or success message */
+  #signupMessage {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .success {
+    color: #28a745; /* Green for success */
+  }
+  
+  .error {
+    color: #e74c3c; /* Red for error */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .signup-container {
+      padding: 20px;
+      max-width: 90%;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    input {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #7b4397, #dc2430); /* Beautiful gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+  .login-container, .signup-container {
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency for the container */
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+     /* Subtle blur effect for background */
+  }
+  
+  /* Header Styling */
+  .login-container h2, .signup-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  /* Input Fields */
+  .login-container input, .signup-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Focus Styling for Inputs */
+  .login-container input:focus, .signup-container input:focus {
+    outline: none;
+    border-color: #0077cc;
+    background-color: #e8f4fd; /* Light blue background on focus */
+  }
+  
+  /* Submit Button */
+  .login-container button, .signup-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0077cc;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button Hover Effect */
+  .login-container button:hover, .signup-container button:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Message Area */
+  #loginMessage, #signupMessage {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Success message (Green) */
+  #loginMessage.success, #signupMessage.success {
+    color: #28a745;
+  }
+  
+  /* Error message (Red) */
+  #loginMessage.error, #signupMessage.error {
+    color: #ff4d4d;
+  }
+  
+  /* Footer for a nice separation */
+  footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Animation for input focus */
+  @keyframes focusEffect {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 10px rgba(0, 123, 204, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  input:focus {
+    animation: focusEffect 0.5s ease-out;
+  }
+  
